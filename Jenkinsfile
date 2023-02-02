@@ -1,6 +1,8 @@
 pipeline {
   agent any
- 
+  tools {
+    mvn
+  }
   stages {
     stage ('Build') {
       steps {
